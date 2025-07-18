@@ -1,129 +1,141 @@
-# 📘 Collapse-Theoretic Resolution of the Black Hole Information Paradox (BHIP) via AK-HDPST v13.0
+# 📘 AK高次元射影構造理論（AK-HDPST v13.0）によるブラックホール情報パラドックス（BHIP）の崩壊理論的解決
 
-## 🌌 What is the Black Hole Information Paradox (BHIP)?
+## 🌌 ブラックホール情報パラドックス（BHIP）とは？
 
-The Black Hole Information Paradox is a foundational inconsistency between general relativity and quantum mechanics.  
-According to Hawking radiation, black holes emit thermal radiation and may eventually evaporate completely.  
-But this process seems to **irreversibly destroy quantum information**, violating the unitarity of quantum evolution.
+ブラックホール情報パラドックスは、量子力学と一般相対論の間に生じる根本的な矛盾です。  
+ホーキング放射によれば、ブラックホールは熱的な放射を行い、最終的に完全に蒸発します。  
+しかしその過程で、ブラックホールに落ちた情報が**不可逆的に消失するように見える**ことが問題です。
 
-In short:
+要点：
 
-- Quantum mechanics: pure states must evolve into pure states (information preserved).
-- Hawking radiation: emits thermal (mixed) states with no memory of the infalling matter.
-- ⇒ Contradiction arises: information appears lost.
-
-This paradox threatens the foundations of modern physics.
+- 量子力学：純粋状態は純粋状態に進化すべき（情報は保存される）
+- ホーキング放射：観測されるのは無構造な混合状態（情報は欠落して見える）
+- ⇒ 情報が消えるように見える → 物理法則に矛盾が生じる
 
 ---
 
-## 🧩 What is AK High-Dimensional Projection Structural Theory (AK-HDPST)?
+## 🧩 AK高次元射影構造理論（AK-HDPST）とは？
 
-**AK-HDPST** is a mathematically rigorous framework for eliminating obstructions across geometry, algebra, and information systems.  
-It is built on three core components:
+**AK-HDPST** は、幾何・代数・情報構造にまたがる障害を排除するための数理的理論体系です。  
+以下の3要素を中核に持ちます：
 
-1. **High-dimensional projections** — structural simplification via functors.
-2. **Collapse structures** — processes that reduce complexity while encoding trace information.
-3. **Type-theoretic formalism** — safety guarantees and logical closure via typing systems.
+1. **高次元射影**：高次構造を縮約して単純化する射影関手
+2. **崩壊構造（Collapse）**：構造的複雑性を失わせつつ情報を残す変換
+3. **型理論的整合性**：非可逆な変換にも安全性を保証する型システム
 
-AK-HDPST v13.0 supports machine-verifiable collapse diagnostics using **Coq / Lean** formalization.(https://github.com/Kobayashi2501/AK-High-Dimensional-Projection-Structural-Theory)
+Version 13.0では、**Coq / Lean による形式検証**が可能な記述まで達成されています。
+
 ---
 
-## 🔓 How does this theory resolve the BHIP?
+## 🔓 この理論はBHIPをどう解決するのか？
 
-AK-HDPST resolves BHIP by **reinterpreting information loss as a structural typing failure** —  
-not as a violation of physics, but as the breakdown of projectability across a categorical boundary.
+AK-HDPSTは、情報消失を「物理法則の破れ」ではなく、**型理論的な崩壊の失敗**とみなします。
 
-Key concepts:
+ポイント：
 
-- Black holes are modeled as **collapse-typable structures**:
+- ブラックホール内部は以下のように「崩壊型付き構造」としてモデル化：
 Type_Collapse(X) := (PH1, Ext1, ICM)
-- PH1: persistent topological structure
-- Ext1: categorical entanglement (nontrivial extensions)
-- ICM: information compression measure
+- PH1: 持続的トポロジー構造（Persistent Homology）
+- Ext1: 圏論的エンタングルメント（非自明な拡張）
+- ICM: 情報圧縮度（内部冗長性の指標）
 
-- The **event horizon** is a **collapse boundary** where:
-- Typing degenerates
-- Collapse functor becomes undefined
-- Functorial information projection fails
+- **事象の地平面（event horizon）**は「崩壊関手が作用できなくなる境界」
+- 型情報が退化する
+- Collapseは自然性を失い定義不能となる
 
-- Hawking radiation emerges as **partial projection of collapse-typable shell regions**:
-- Only high-ICM, low-Ext1 structures escape
-- Core information remains unrecoverable
-
----
-
-## 🧠 What does this theory allow us to say concretely?
-
-### ✅ Black Hole Interior Structure
-
-The Bekenstein–Hawking black hole (BKH) interior is stratified:
-
-- **Core Layer**:
-- PH1 ≠ 0 (topological cycles remain)
-- Ext1 ≠ 0 (entanglement persists)
-- ICM: high (informational redundancy)
-- **Shell Layer**:
-- PH1 → 0, Ext1 → 0
-- ICM: moderate
-- **Horizon**:
-- Typing becomes undefined
-- Collapse is non-functorial
-
-X_core → X_shell → X_horizon → Collapse(X) (observable)
-
-
-### ✅ Collapse Q.E.D. (Epistemic Closure)
-
-Collapse is irreversible:
-
-- Collapse_QED(X) := PH1 = 0, Ext1 = 0, ICM > 0, KL_div > 0, and no inverse map exists.
-- Entropy arises not from thermal noise, but from non-invertible projection.
-- Formalized and verifiable in Coq.
+- **ホーキング放射**は「型付き構造の一部が外部に射影される結果」
+- Ext1=0、PH1=0、ICM>0 の部分だけが漏れ出る
+- 情報の一部のみが観測可能となる
 
 ---
 
-## 🧬 Structural Results
+## 🧠 具体的に何が言えるのか？内部構造はどうなるのか？
 
-- 🔹 Collapse = functorial, structure-reducing projection (not invertible)
-- 🔹 KL divergence used to measure structural entropy
-- 🔹 Ext1 models entanglement as categorical obstruction
-- 🔹 Firewall = total failure of collapse typing at the horizon
-- 🔹 AdS/CFT and ER=EPR reinterpreted as projection-compatible approximations
-- 🔹 Collapse Q.E.D. = formal endpoint of gravitational information encoding
+### ✅ ブラックホール内部の崩壊構造
 
----
+BKHブラックホールの内部は以下のように層構造としてモデル化されます：
 
-## 🧪 Simulation and Observation Possibilities (Appendix L)
+- **コア領域（r ≪ r_h）**：
+- PH1 ≠ 0（トポロジー非自明）
+- Ext1 ≠ 0（エンタングルメント残存）
+- ICM 高（圧縮可能）
 
-- **Gravitational wave ringdown analysis**:
-  - Use persistent homology to detect topological collapse
-- **AdS/CFT simulations (MERA, HaPPY)**:
-  - Detect Ext1 collapse via entanglement wedge failure
-- **Quantum circuits**:
-  - Simulate collapse failure via tensor noise and recovery thresholds
+- **シェル領域（r ≲ r_h）**：
+- PH1 → 0、Ext1 → 0
+- ICM 中程度
 
----
+- **事象の地平面（r = r_h）**：
+- 型が未定義
+- Collapseが定義不能
 
-## 📂 Repository Contents
-
-- `main.tex`: Full LaTeX manuscript
-- `appendix/`: All appendix sections A–Z⁺
-- `README.md`: (this file)
-
----
-
-## 📌 Citation (Zenodo DOI)
+X_core → X_shell → X_horizon → Collapse(X) （観測される射影像）
 
 
+### ✅ Collapse Q.E.D.（崩壊の完全証明）
 
----
+- Collapse_QED(X)：
+  - PH1 = 0
+  - Ext1 = 0
+  - ICM > 0
+  - KL_divergence > 0
+  - 逆写像なし（不可逆）
 
-## 🧠 Keywords
-
-Black Hole Information Paradox, Collapse Functor, Category Theory, Entropy, Ext1, Persistent Homology, AK-HDPST, Coq Formalization, Type-Theoretic Closure
+これは、情報の不可逆的崩壊の**型理論的完結条件**です。
 
 ---
 
-## 📜 License
+## 🧬 理論的成果と構造的意義
 
-This work is released under the MIT License.
+- ✅ Collapse = 型安全な縮約写像（Functor）だが非可逆
+- ✅ KLダイバージェンス = 情報崩壊の指標（BKHエントロピーに対応）
+- ✅ Ext1 = エンタングルメント構造のモデル
+- ✅ Firewall = Collapse Typing が同時に全て破綻する点（Type IV Failure）
+- ✅ AdS/CFT, ER=EPR = Collapseに整合する圏論的近似
+- ✅ Collapse Q.E.D. = 情報構造の終端状態（形式証明可能）
+
+---
+
+## 🧪 観測・数値的検証の可能性（Appendix L）
+
+### 1. 重力波干渉計（LIGO, Virgo, KAGRA）
+
+- ホーキング放射後のリングダウン波形から、PH1の崩壊をPersistent Homologyで検出
+- KLダイバージェンスに相当する情報歪みを時系列分布から抽出
+
+### 2. AdS/CFT数値シミュレーション
+
+- MERAやHaPPYコードにより境界→内部再構成を試行
+- 再構成不能な領域 = Ext1崩壊の構造的証拠
+
+### 3. 量子回路モデル（IBM Quantumなど）
+
+- Ext1構造を持つ量子回路をノイズ注入でCollapseシミュレート
+- 回復不能閾値を探索 → Collapse Failure分類（Type I–IV）と対応
+
+---
+
+## 📂 リポジトリ構成
+
+- `main.tex`：論文本体（LaTeX形式）
+- `appendix/`：Appendix A〜Z⁺
+
+- `README.md`：本ファイル（英語版）
+- `README_ja.md`：日本語版（本ファイル）
+
+---
+
+## 📌 Zenodo DOI（アップロード後に挿入）
+
+
+
+---
+
+## 🧠 キーワード
+
+ブラックホール情報パラドックス、Collapse関手、型理論、情報圧縮、Ext1、Persistent Homology、AK-HDPST、Coq形式証明、非可逆性、型付きエントロピー
+
+---
+
+## 📜 ライセンス
+
+MITライセンスのもとで公開
