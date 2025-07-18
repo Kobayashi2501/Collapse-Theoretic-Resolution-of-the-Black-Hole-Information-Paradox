@@ -1,0 +1,1 @@
+# Collapse-Theoretic-Resolution-of-the-Black-Hole-Information-Paradox
