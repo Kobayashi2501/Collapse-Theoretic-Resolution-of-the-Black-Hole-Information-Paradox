@@ -126,7 +126,7 @@ X_core → X_shell → X_horizon → Collapse(X) （観測される射影像）
 
 ## 📌 Zenodo DOI（アップロード後に挿入）
 
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16063396.svg)](https://doi.org/10.5281/zenodo.16063396)
 
 ---
 
