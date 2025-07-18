@@ -25,8 +25,7 @@ It is built on three core components:
 2. **Collapse structures** — processes that reduce complexity while encoding trace information.
 3. **Type-theoretic formalism** — safety guarantees and logical closure via typing systems.
 
-AK-HDPST v13.0 supports machine-verifiable collapse diagnostics using **Coq / Lean** formalization.
-(https://github.com/Kobayashi2501/AK-High-Dimensional-Projection-Structural-Theory)
+AK-HDPST v13.0 supports machine-verifiable collapse diagnostics using **Coq / Lean** formalization.{(https://github.com/Kobayashi2501/AK-High-Dimensional-Projection-Structural-Theory)}
 ---
 
 ## 🔓 How does this theory resolve the BHIP?
